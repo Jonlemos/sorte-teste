@@ -1,34 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Teste Sorte Online
 
-## Getting Started
+---
 
-First, run the development server:
+Repositório criado para teste front-end na Sorte Online
+
+### Stacks
+
+React, javascript;
+
+### Tecnologias utilizadas
+
+Material-DesingIcons, Preetier, nextjs, styled components, material ui..
+
+### Iniciar Projeto
+
+Para inicializar o projeto é necessário instalar as dependências
 
 ```bash
 npm run dev
-# or
+# Se estiver utilizando yarn
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Em seguida, execute o comando abaixo:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```sh
+npm dev
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Ou
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+yarn dev
+```
 
-## Learn More
+Com isso abrirá a página na url http://localhost:3000/
 
-To learn more about Next.js, take a look at the following resources:
+### Utilizando a Aplicação
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Página Inicial:
+http://localhost:3000/
+Local principal dos produtos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Página de produtos:
+http://localhost:3000/product/[id]
+Criei uma página adicional de produtos
 
-## Deploy on Vercel
+Página dos carrinhos:
+http://localhost:3000/cart
+Ao inserir produtos pagina é redirecionada para carrinho.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Obs: Apesar de instalar, configurar e deixar comentado a adição de cookies para atualização da página, não os inseri pois era necessário retirar o server side do Nextjs,
+preferi não o fazer, pois acho que não era o intuito do teste, mas deixei as informações de cookies pré prontas.
