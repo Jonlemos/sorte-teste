@@ -3,6 +3,7 @@ import { AppBar, Container, Toolbar, Typography } from "@material-ui/core";
 
 const AppB = styled(AppBar)`
   background: #ebebea;
+  margin-bottom: 40px;
 `;
 
 const Toolb = styled(Toolbar)`
@@ -21,12 +22,19 @@ const Logo = styled(Typography)`
   color: #ad7f9d;
   box-shadow: 2px 1px 3px 1px #dab8cb;
 `;
+const Grow = styled.div`
+  flex-grow: 1;
+  display: flex;
+  justify-content: end;
+`;
 
 const Containe = styled(Container)`
   min-height: 80vh;
 `;
 
 const Footer = styled.footer`
+  padding: 20px;
   text-align: center;
 `;
-export { AppB, Toolb, Typogr, Logo, Containe, Footer };
+
+export { AppB, Toolb, Typogr, Logo, Containe, Footer, Grow };

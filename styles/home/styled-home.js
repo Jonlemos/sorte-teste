@@ -9,6 +9,10 @@ import {
 
 const CardMed = styled(CardMedia)`
   padding: 15px 40px;
+  &:hover {
+    transition: all ease 0.3s;
+    padding: 10px 32px;
+  }
 `;
 const CardCont = styled(CardContent)`
   display: flex;
@@ -34,10 +38,28 @@ const TypoPrice = styled(Typography)`
   display: flex;
   font-weight: 600 !important;
 `;
+
+const SpanPrice = styled.span`
+  text-decoration: line-through;,
+  color: #8F8280!important;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-top: 2px;
+  font-size: 0.8rem
+
+`;
 const ButtonCart = styled(Button)`
   background: #b43574 !important;
   color: #fff !important;
   text-transform: none !important;
+`;
+
+const InCart = styled(Button)`
+  cursor: initial !important;
+  color: #8b977d !important;
+  background: #fff !important;
+  text-transform: none !important;
+  border: 1px solid #000 !important;
 `;
 
 export {
@@ -48,4 +70,6 @@ export {
   CardAct,
   TypoPrice,
   ButtonCart,
+  InCart,
+  SpanPrice,
 };

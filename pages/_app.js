@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { StoreProvider } from "../utils/Store";
 
 const GlobalStyle = createGlobalStyle`
 html{
@@ -30,9 +31,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <StoreProvider>
+        <ThemeProvider theme={theme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </StoreProvider>
     </>
   );
 }
